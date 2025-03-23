@@ -1,48 +1,66 @@
 .community {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .community h2 {
-    margin-bottom: 20px;
-    color: #4CAF50; /* Theme color */
-  }
-  
-  .community h3 {
-    margin-top: 20px;
-    color: #333; /* Darker color for subheadings */
-  }
-  
-  .community ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    text-align: left; /* Align text to the left */
-    margin: 20px auto; /* Center the list */
-    max-width: 600px; /* Limit width for better readability */
-  }
-  
-  .community li {
-    margin-bottom: 10px; /* Space between list items */
-  }
-  
-  .cta {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #4CAF50; /* Theme color */
-    color: white;
-    border-radius: 8px; /* Rounded corners */
-  }
-  
-  .cta button {
-    background-color: white; /* Button background */
-    color: #4CAF50; /* Button text color */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta button:hover {
-    background-color: #45a049; /* Darker shade on hover */
-  }
+  padding: 20px;
+  text-align: center;
+}
+
+.community h2 {
+  margin-bottom: 20px;
+  color: #4CAF50; /* Theme color */
+}
+
+.community h3 {
+  margin-top: 20px;
+  color: #333; /* Darker color for subheadings */
+}
+
+.community ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  text-align: left; /* Align text to the left */
+  margin: 20px auto; /* Center the list */
+  max-width: 600px; /* Limit width for better readability */
+}
+
+.community li {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space between list items */
+  padding: 10px;
+  background-color: #ffffff; /* White background for each initiative */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.community li img {
+  width: 200px; /* Fixed width for images */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensures uniform cropping */
+  border-radius: 4px; /* Rounded corners for images */
+  margin-right: 15px; /* Space between image and text */
+}
+
+.community li .initiative-info {
+  flex: 1; /* Allow text to take remaining space */
+}
+
+.cta {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #4CAF50; /* Theme color */
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.cta button {
+  background-color: white; /* Button background */
+  color: #4CAF50; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}

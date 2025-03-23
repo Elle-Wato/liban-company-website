@@ -12,13 +12,22 @@ const Community = () => {
       <h3>Our Initiatives</h3>
       <ul>
         <li>
-          <strong>Training Programs:</strong> We offer workshops on modern farming techniques, sustainable practices, and financial management to help farmers improve their productivity.
+          <img src="/images/training.png" alt="Training Programs" /> {/* Replace with actual image path */}
+          <div className="initiative-info">
+            <strong>Training Programs:</strong> We offer workshops on modern farming techniques, sustainable practices, and financial management to help farmers improve their productivity.
+          </div>
         </li>
         <li>
-          <strong>Partnerships with NGOs:</strong> We collaborate with local and international organizations to address food security challenges and promote sustainable agriculture.
+          <img src="/images/partnerships.png" alt="Partnerships with NGOs" /> {/* Replace with actual image path */}
+          <div className="initiative-info">
+            <strong>Partnerships with NGOs:</strong> We collaborate with local and international organizations to address food security challenges and promote sustainable agriculture.
+          </div>
         </li>
         <li>
-          <strong>Sponsorship of Local Events:</strong> We actively participate in agricultural fairs and exhibitions to promote best practices and connect with the farming community.
+          <img src="/images/sponsorship.png" alt="Sponsorship of Local Events" /> {/* Replace with actual image path */}
+          <div className="initiative-info">
+            <strong>Sponsorship of Local Events:</strong> We actively participate in agricultural fairs and exhibitions to promote best practices and connect with the farming community.
+          </div>
         </li>
       </ul>
 
