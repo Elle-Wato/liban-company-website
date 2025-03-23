@@ -1,0 +1,62 @@
+.team {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .team h2 {
+    margin-bottom: 20px;
+    color: #4CAF50; /* Theme color */
+  }
+  
+  .team h3 {
+    margin-top: 15px;
+    color: #333; /* Darker color for member names */
+  }
+  
+  .team h4 {
+    color: #777; /* Lighter color for roles */
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the team members */
+    gap: 20px; /* Space between team members */
+  }
+  
+  .team-member {
+    background-color: #f9f9f9; /* Light background for member cards */
+    border: 1px solid #ccc; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    width: 200px; /* Fixed width for member cards */
+    text-align: center; /* Center text */
+  }
+  
+  .team-member img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular images */
+  }
+  
+  .cta {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #4CAF50; /* Theme color */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .cta button {
+    background-color: white; /* Button background */
+    color: #4CAF50; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+  }

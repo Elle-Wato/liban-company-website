@@ -1,0 +1,40 @@
+.products {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-category {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for product categories */
+  }
+  
+  .product-category img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners for images */
+  }
+  
+  .cta {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #4CAF50; /* Theme color */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .cta button {
+    background-color: white; /* Button background */
+    color: #4CAF50; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+  }
