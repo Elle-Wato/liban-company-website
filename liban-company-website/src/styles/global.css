@@ -18,7 +18,7 @@ body {
   left: 0; /* Align it to the left */
   right: 0; /* Align it to the right */
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Space between menu and contact info */
   align-items: center; /* Center items vertically */
   background: #4CAF50; /* Theme color */
   padding: 15px 20px; /* Add horizontal padding */
@@ -33,17 +33,35 @@ body {
 }
 
 .navbar button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
+  background: none; /* No background */
+  border: none; /* No border */
+  color: white; /* Text color */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Flexbox for icon and text */
+  align-items: center; /* Center items vertically */
   transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
 }
 
 .navbar button:hover {
   color: #ffeb3b; /* Highlight color on hover */
   transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+.contact-info {
+  display: flex; /* Flexbox for contact info */
+  align-items: center; /* Center items vertically */
+  color: white; /* Text color for contact info */
+}
+
+.contact-info span {
+  margin-left: 20px; /* Space between contact items */
+  display: flex; /* Flexbox for icon and text */
+  align-items: center; /* Center items vertically */
+}
+
+.contact-info span svg {
+  margin-right: 5px; /* Space between icon and text */
 }
 
 /* Footer */
@@ -107,7 +125,7 @@ section:nth-child(odd) {
 
 .contact label {
   display: block; /* Make labels block elements */
-  margin-bottom: 5px; /* Space below labels */
+  margin-bottom: 5 px; /* Space below labels */
   font-weight: bold; /* Bold labels for emphasis */
 }
 

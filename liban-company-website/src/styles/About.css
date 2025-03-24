@@ -1,19 +1,105 @@
+/* Import Google Fonts in your index.html or use a CSS import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .about {
-  padding: 20px;
+  padding: 40px 20px; /* Increased padding for better spacing */
   max-width: 800px; /* Limit the width for better readability */
   margin: 0 auto; /* Center the content */
   text-align: center; /* Center text for headings */
-  font-family: Arial, sans-serif; /* Use a clean font */
+  font-family: 'Roboto', sans-serif; /* Use a clean font */
+  background-color: #f9f9f99a; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
 }
 
 .about h2 {
   margin-bottom: 20px;
   color: #4CAF50; /* Theme color */
+  font-size: 2.5em; /* Larger font size for the main heading */
 }
 
 .about h3 {
   margin-top: 20px;
   color: #333; /* Darker color for subheadings */
+  font-size: 1.8em; /* Slightly larger font size for subheadings */
+}
+
+.mission-vision {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between mission and vision */
+  margin: 20px 0; /* Space around the section */
+}
+
+.mission, .vision {
+  background-color: #ffffff; /* White background for boxes */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0 , 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Padding inside the boxes */
+  flex: 1; /* Equal width for both boxes */
+  margin: 0 10px; /* Margin between boxes */
+}
+
+.core-values ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.core-values li {
+  background: url('path/to/custom-bullet.png') no-repeat left center; /* Custom bullet point */
+  padding-left: 20px; /* Space for the bullet */
+  margin: 10px 0; /* Space between list items */
+}
+
+.cta {
+  margin-top: 30px; /* Space above the CTA section */
+  background-color: #4CAF50; /* CTA background color */
+  color: white; /* Text color for CTA */
+  padding: 20px; /* Padding for CTA */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.cta button {
+  background-color: #ffffff; /* Button background color */
+  color: #4CAF50; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cta button:hover {
+  background-color: #e0e0e0; /* Change background on hover */
+}
+
+
+
+
+
+
+
+
+.about {
+  padding: 40px 20px; /* Increased padding for better spacing */
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the content */
+  text-align: center; /* Center text for headings */
+  font-family: Arial, sans-serif; /* Use a clean font */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  color: #4CAF50; /* Theme color */
+  font-size: 2em; /* Larger font size for the main heading */
+}
+
+.about h3 {
+  margin-top: 20px;
+  color: #333; /* Darker color for subheadings */
+  font-size: 1.5em; /* Slightly larger font size for subheadings */
 }
 
 .mission-vision {
@@ -28,7 +114,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
   padding: 20px; /* Padding inside the boxes */
   flex: 1; /* Allow boxes to grow equally */
-  margin: 0 10px; /* Space between boxes */
+  margin: 0 10px ; /* Space between boxes */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.mission:hover, .vision:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .about ul {
@@ -59,11 +150,12 @@
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for button */
 }
 
 .cta button:hover {
   background-color: #45a049; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .core-values {
