@@ -76,3 +76,16 @@
       font-size: 16px;
   }
 }
+
+.carousel-text {
+  position: absolute; /* Position text over the image */
+  bottom: 20px; /* Position from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  width: 80%; /* Width of the text container */
+}
