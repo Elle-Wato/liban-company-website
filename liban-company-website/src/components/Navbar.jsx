@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHome, FaInfoCircle, FaBoxOpen, FaUsers, FaUserFriends, FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa"; // Added FaEnvelope for email
 import "../styles/global.css";
+//import logo from "../images/logo.png"; // Adjust the path as necessary
 
 const Navbar = () => {
   const scrollToSection = (id) => {

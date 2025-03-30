@@ -1,66 +1,102 @@
-.community {
-  padding: 20px;
+.products, .community {
+  padding: 40px 20px;
   text-align: center;
+  background-color: #f9f9f9;
+  font-family: "Arial", sans-serif;
 }
 
 .community h2 {
   margin-bottom: 20px;
-  color: #4CAF50; /* Theme color */
+  color: #4CAF50;
+  font-size: 2.5em;
 }
 
 .community h3 {
   margin-top: 20px;
-  color: #333; /* Darker color for subheadings */
+  color: #333;
+  font-size: 2em;
 }
 
 .community ul {
-  list-style-type: none; /* Remove default list styling */
-  padding: 0; /* Remove padding */
-  text-align: left; /* Align text to the left */
-  margin: 20px auto; /* Center the list */
-  max-width: 600px; /* Limit width for better readability */
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
 .community li {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 20px; /* Space between list items */
-  padding: 10px;
-  background-color: #ffffff; /* White background for each initiative */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
 }
 
 .community li img {
-  width: 200px; /* Fixed width for images */
-  height: 200px; /* Fixed height for images */
-  object-fit: cover; /* Ensures uniform cropping */
-  border-radius: 4px; /* Rounded corners for images */
-  margin-right: 15px; /* Space between image and text */
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 20px;
 }
 
 .community li .initiative-info {
-  flex: 1; /* Allow text to take remaining space */
+  flex: 1;
+  font-size: 1.3em;
+  color: #555;
 }
 
 .cta {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: #4CAF50; /* Theme color */
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #4CAF50;
   color: white;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 10px;
+  text-align: center;
 }
 
 .cta button {
-  background-color: white; /* Button background */
-  color: #4CAF50; /* Button text color */
+  background-color: white;
+  color: #4CAF50;
+  font-size: 1.3em;
+  font-weight: bold;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 12px 24px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta button:hover {
-  background-color: #45a049; /* Darker shade on hover */
+  background-color: #45a049;
+  color: white;
+  transform: scale(1.07);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .community li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .community li img {
+    width: 95%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .community li .initiative-info {
+    text-align: center;
+  }
 }

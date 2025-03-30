@@ -15,13 +15,13 @@
 .about h2 {
   margin-bottom: 20px;
   color: #4CAF50; /* Theme color */
-  font-size: 2.5em; /* Larger font size for the main heading */
+  font-size: larger; /* Larger font size for the main heading */
 }
 
 .about h3 {
   margin-top: 20px;
   color: #333; /* Darker color for subheadings */
-  font-size: 1.8em; /* Slightly larger font size for subheadings */
+  font-size: larger; /* Slightly larger font size for subheadings */
 }
 
 .mission-vision {
@@ -37,11 +37,13 @@
   padding: 20px; /* Padding inside the boxes */
   flex: 1; /* Equal width for both boxes */
   margin: 0 10px; /* Margin between boxes */
+  font-size: larger;
 }
 
 .core-values ul {
   list-style-type: none; /* Remove default bullet points */
   padding: 0; /* Remove padding */
+  font-size: larger;
 }
 
 .core-values li {

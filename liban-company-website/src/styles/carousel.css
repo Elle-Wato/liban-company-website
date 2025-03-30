@@ -88,4 +88,6 @@
   border-radius: 5px; /* Rounded corners */
   text-align: center; /* Center text */
   width: 80%; /* Width of the text container */
+  font-weight: 300;
+  font-style: bold;
 }

@@ -26,6 +26,16 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
+.logo {
+  display: flex; /* Flexbox for logo alignment */
+  align-items: center; /* Center logo vertically */
+}
+
+.logo img {
+  height: 50px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -105,6 +115,10 @@ section:nth-child(odd) {
   .navbar button {
     font-size: 16px; /* Smaller font size on mobile */
   }
+
+  .logo img {
+    height: 40px; /* Adjust logo size for mobile if needed */
+  }
 }
 
 /* Contact Form Styles */
@@ -125,7 +139,7 @@ section:nth-child(odd) {
 
 .contact label {
   display: block; /* Make labels block elements */
-  margin-bottom: 5 px; /* Space below labels */
+  margin-bottom: 5px; /* Space below labels */
   font-weight: bold; /* Bold labels for emphasis */
 }
 
