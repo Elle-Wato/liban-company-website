@@ -8,6 +8,7 @@ import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import TopBar from "./components/TobBar";
 import "./styles/global.css";
 import "./styles/carousel.css";
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <TopBar />
       <div id="home">
         <Home />
       </div>

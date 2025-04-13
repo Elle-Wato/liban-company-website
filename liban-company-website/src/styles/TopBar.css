@@ -1,0 +1,26 @@
+.top-bar {
+    background-color: #27ae60;
+    color: white;
+    font-size: 0.9rem;
+    padding: 6px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+  
+  .top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .top-bar-content span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
