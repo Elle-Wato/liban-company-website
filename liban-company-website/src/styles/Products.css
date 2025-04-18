@@ -5,6 +5,30 @@
   font-family: "Arial", sans-serif;
 }
 
+.product-category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 1000px; /* slightly reduce from 1100px */
+  margin: 0 auto;
+  gap: 2rem;
+  transform: scale(0.9); /* 👈 scale down */
+}
+
+.slider-wrapper {
+  max-width: 900px; /* You can adjust this */
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+
 .products h2 {
   font-size: 2.5em;
   color: #2c3e50;

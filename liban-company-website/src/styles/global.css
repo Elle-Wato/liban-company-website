@@ -63,19 +63,16 @@ body {
 }
 
 .navbar-logo {
-  height: 60px;         /* fixed height */
-  width: auto;          /* auto width to keep proportions */
-  object-fit: contain;  /* ensure it doesn't stretch */
-  max-width: 200px;     /* optional max width */
-}
-
-.logo img {
-  height: 60px;
-  max-width: 120px;
+  height: 80px; /* Increase this for a bigger logo */
   width: auto;
   object-fit: contain;
 }
 
+.navbar-logo {
+  height: 80px; /* or however big you want it */
+  width: auto;
+  object-fit: contain;
+}
 
 
 .logo h1 {

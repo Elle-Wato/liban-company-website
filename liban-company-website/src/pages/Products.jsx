@@ -72,22 +72,25 @@ const Products = () => {
         At Liban Agro-Trading Company, we provide a wide range of high-quality agricultural products to empower farmers and enhance productivity.
       </p>
 
-      <Slider {...settings}>
-        {products.map((product, index) => (
-          <div className="product-category" key={index}>
-            <img src={product.img} alt={product.alt} />
-            <div className="product-info">
-              <h3>{product.title}</h3>
-              <p>{product.description}</p>
-              <ul>
-                {product.points.map((point, idx) => (
-                  <li key={idx}>{point}</li>
-                ))}
-              </ul>
+      {/* ✅ Added wrapper here */}
+      <div className="slider-wrapper">
+        <Slider {...settings}>
+          {products.map((product, index) => (
+            <div className="product-category" key={index}>
+              <img src={product.img} alt={product.alt} />
+              <div className="product-info">
+                <h3>{product.title}</h3>
+                <p>{product.description}</p>
+                <ul>
+                  {product.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
 
       <div className="cta">
         <h3>Ready to Boost Your Harvest?</h3>
