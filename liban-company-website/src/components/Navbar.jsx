@@ -3,7 +3,7 @@ import {
   FaInfoCircle, FaBoxOpen, FaUsers, FaUserFriends, FaPhone, FaMapMarkerAlt, FaEnvelope
 } from "react-icons/fa";
 import "../styles/global.css";
-import logo from "/images/logo.jpg"; // Make sure this path is correct
+import logo from "/images/logo.png"; // Make sure this path is correct
 
 const Navbar = () => {
   const scrollToSection = (id) => {
