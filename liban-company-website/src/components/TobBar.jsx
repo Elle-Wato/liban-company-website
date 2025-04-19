@@ -8,7 +8,7 @@ const TopBar = () => {
       <div className="top-bar-content">
         <span><FaMapMarkerAlt /> Bakaro Market, Mogadishu</span>
         <span><FaPhone /> (252) 611-273-333</span>
-        <span><FaEnvelope /> liiban.trading@gmail.com</span>
+        <span><FaEnvelope />info@libanagrotradingcompany.com</span>
       </div>
     </div>
   );

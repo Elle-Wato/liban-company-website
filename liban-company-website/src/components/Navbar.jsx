@@ -1,22 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
-  FaInfoCircle, FaBoxOpen, FaUsers, FaUserFriends, FaPhone, FaMapMarkerAlt, FaEnvelope
+  FaInfoCircle,
+  FaBoxOpen,
+  FaUsers,
+  FaUserFriends,
+  FaPhone,
 } from "react-icons/fa";
 import "../styles/global.css";
-import logo from "/images/logo.png"; // Make sure this path is correct
+import logo from "/images/logo.png";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-    } else {
-      console.warn(`Section with ID "${id}" not found.`);
     }
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-left">
         <button className="logo-button logo" onClick={() => scrollToSection("home")}>
           <img src={logo} alt="Liban Logo" className="navbar-logo" />
